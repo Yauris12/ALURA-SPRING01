@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALURA CHALLENGE - DESAFIO 01</title>
+    <title>Alura Challenge - Desafio 01</title>
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -13,9 +13,45 @@
       <img src="/src/logo.svg" alt="" />
     </header>
 
-    <main>
-      <section class="text"></section>
-      <aside></aside>
+    <main class="main-content">
+      <section>
+        <div>
+          <textarea id="text-input" placeholder="Ingrese el texto aqui">
+          </textarea>
+        </div>
+        <div class="footer-main">
+          <div class="message">
+            <img src="/src/icon.svg" alt="" />
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+
+          <div class="button-container">
+            <button class="btn-primary" onclick="btn_encriptar()">
+              Encriptar
+            </button>
+            <button class="btn-alt" onclick="btn_desencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="aside-image">
+          <img src="/src/muneco.svg" alt="muñeco" class="muneco" />
+          <div class="aside_text">
+            <h3 class="aside_title">Ningún mensaje fue encontrado</h3>
+            <p class="aside_parrafo">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </div>
+        <div class="text-encriptado d-none">
+          <p class="value_enc"></p>
+          <button class="btn-alt btn-aside" onclick="btnCopy()">Copiar</button>
+        </div>
+      </aside>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
